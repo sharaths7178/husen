@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import { PersistGate } from "redux-persist/integration/react";
 import themeObject from "./ui-config/theme";
 import App from "./App";
@@ -11,7 +11,7 @@ import "./index.css";
 // import * as serviceWorker from "./serviceWorker";
 
 //theme configuration
-const theme = createMuiTheme(themeObject);
+const theme = createTheme(themeObject);
 
 const rootElement = document.getElementById("root");
 
